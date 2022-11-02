@@ -1,0 +1,149 @@
+#pages-main{
+    margin-top: 3em;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#pages-content{
+    width: 95%;
+    height: 90%;
+    border: 1px solid; 
+} 
+
+.page-content-skills{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.body-page-content {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . . . ."; 
+}
+
+.head-page-content{
+    background-color: #4961DC;
+    padding: 0.5em 0;
+    font-weight: 800;
+}
+
+.card-skills{
+    padding: 1em 0;
+} 
+
+.card-skills:hover{
+    background-image: none;
+    background-color: #191919;
+} 
+
+
+
+#home-main{
+    margin-top: 3em;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 6em;
+}
+
+
+a,
+#home-main p:not(.brief-about-me) {
+    align-self: center;
+}
+
+#home-main p.brief-about-me {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+#top-profile{
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+
+#top-profile img{
+    border-radius: 50%;
+    border: 2px solid #4961DC;
+}
+
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-weight: 400;
+}
+
+h2 span{
+    font-weight: 800;
+    background-color: rgb(106,152,240);
+    background-image: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+a,
+span{
+    margin-left: 0;
+}
+
+footer{
+    align-self: flex-end;
+    margin:5px 0.5em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+h4{
+    font-weight: 300;
+}
+
+.scroll-vertical{
+    overflow-y: scroll;
+}
+
+@media (max-width:600px) {
+    .body-page-content {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". . ."; 
+    }
+}
+
+@media (max-width: 900px){
+    h1{
+        font-size: 30px;
+    }
+
+    #top-profile img{
+        width: 100px;
+    }
+
+    #home-main p.brief-about-me{
+        font-size: 18px;
+    }
+}
