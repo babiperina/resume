@@ -7,24 +7,31 @@
 }
 
 body{
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: #191919;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */ 
+}
+
+#wrapper{
+    /* width: 100%;
+    height: 100%;
+    /* border: 1px solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    overflow: auto;
+    -webkit-box-shadow: -4px 0px 10px -2px rgba(0,0,0,0.93); 
+    box-shadow: -4px 0px 10px -2px rgba(0,0,0,0.93); */ 
+    
     width: 100vw;
     height: 100vh;
     background-color: #191919;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#wrapper{
-    width: 98%;
-    height: 95%;
-    border: 1px solid;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    display: flex;
-    overflow: auto;
-    -webkit-box-shadow: -4px 0px 10px -2px rgba(0,0,0,0.93); 
-    box-shadow: -4px 0px 10px -2px rgba(0,0,0,0.93);
 }
 
 nav{
@@ -87,9 +94,8 @@ main{
     background-color: #191919;
     display: flex;
     flex-direction: column;
-    gap: 3em;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 span.relevant{
@@ -146,7 +152,6 @@ footer a:active{
     #wrapper{
         flex-direction: column;
         align-items: center;
-        gap: 3em;
     }
 
     nav{
@@ -166,8 +171,25 @@ footer a:active{
 }
 
 @media (max-width:900px) {
+    #wrapper{
+        justify-content: normal;
+    }
+
     nav ul li a p{
         display: none;
         visibility:hidden;
     }
+}
+
+
+::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #74b9ff;
+	border-radius: 10px;
 }
