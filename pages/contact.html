@@ -28,8 +28,37 @@
                 <h2>
                     <span>Contact me</span> and let's talk!
                 </h2>
-                <div id="pages-content">
-
+                <div id="pages-content" class="contact-content">
+                    <div id="form-content">
+                        <form method="post" class="contact-form">
+                            <label for="label_name">
+                                Name
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </label>
+                            <label for="label_email">
+                                Email
+                                <input type="email" id="email" placeholder="example@gmail.com" required>
+                            </label>
+                            <label for="label_message" id="label_message">
+                                Message
+                                <textarea name="message" id="message" placeholder="Hey there!" required></textarea>
+                            </label>
+                            <button type="submit" disabled>
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div id="socialmedia-content">
+                        <div id="socialmedia" class="instagram">
+                            <a href=""><img src="../images/insta.png" alt="" width="24"></a>
+                        </div>
+                        <div id="socialmedia" class="linkedin">
+                            <a href=""><img src="../images/linkedin.png" alt="" width="24"></a>
+                        </div>
+                        <div id="socialmedia" class="github">
+                            <a href=""><img src="../images/git.png" alt="" width="24"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer>

@@ -23,6 +23,7 @@
     text-align: center;
 }
 
+
 .body-page-content {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -121,6 +122,73 @@ h4{
 
 .scroll-vertical{
     overflow-y: scroll;
+}
+
+#form-content{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid; */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    font-weight: bold;
+}
+
+input{
+    height: 2em;
+}
+
+textarea{
+    min-height: 10em;
+    resize: none;
+}
+
+button{
+    background-color: #4961DC;
+    border-radius: 20px;
+    padding:5px 20px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+button:active{
+    opacity: 40%;
+}
+
+input,
+textarea{
+    width: 30em;
+    font-weight: bold;
+    color: #4961DC;
+    padding: 5px;
+}
+
+#socialmedia-content{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+    /* border: 1px solid;    */
 }
 
 @media (max-width:600px) {
